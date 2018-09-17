@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-loading",
+  "description": "Loading component for webkit sass",
+  "main": [
+    "dist/webkit-sassui-loading.css",
+    "dist/webkit-sassui-loading.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "loading"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-loading",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,20 @@
+@import "../dist/webkit-sassui-loading.scss";
+
+.test-webkit-sassui-loading{
+  border:1px solid red;
+
+}
+
+button{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #007aff;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  &:active{
+    background:darken(#007aff, 10%);
+  }
+}

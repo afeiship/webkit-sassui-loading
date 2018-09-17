@@ -1,0 +1,76 @@
+/*webkit-sassui-loading Start*/
+$webkit-sassui-loading-options: (
+  padding: 16px,
+  border-radius: 10px,
+  opacity: 0.6,
+  duration: 300ms
+) !default;
+
+.webkit-sassui-loading {
+  //Your code goes here.
+  $padding: map-get(
+    $map: $webkit-sassui-loading-options,
+    $key: padding
+  );
+
+  $opacity: map-get(
+    $map: $webkit-sassui-loading-options,
+    $key: opacity
+  );
+
+  $duration: map-get(
+    $map: $webkit-sassui-loading-options,
+    $key: duration
+  );
+
+  $border-radius: map-get(
+    $map: $webkit-sassui-loading-options,
+    $key: border-radius
+  );
+
+  @keyframes webkit-sassui-loading-fade-in {
+    to {
+      opacity: 1;
+      background: rgba(#000, $opacity);
+    }
+  }
+  @keyframes webkit-sassui-loading-fade-out {
+    from {
+      opacity: 1;
+      background: rgba(#000, $opacity);
+    }
+    to {
+      opacity: 0;
+      background: rgba(#000, 0);
+    }
+  }
+
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 37.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(#000, $opacity);
+  padding: $padding;
+  border-radius: $border-radius;
+  color: #fff;
+
+  > .ft {
+    margin-top: 5px;
+    display: block;
+  }
+
+  &.visible-true,
+  &[data-visible="true"] {
+    background: rgba(#000, 0);
+    animation: webkit-sassui-loading-fade-in $duration ease-in forwards;
+  }
+
+  &,
+  &.visible-false,
+  &[data-visible="false"] {
+    animation: webkit-sassui-loading-fade-out $duration ease-in forwards;
+  }
+}
+/*webkit-sassui-loading End*/

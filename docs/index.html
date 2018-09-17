@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webkit-sassui-loading</title>
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <button id="btnShow">ShowLoading</button>
+  <button id="btnHide">hideLoading</button>
+  <div class="webkit-sassui-loading" data-visible="false" hidden id='el'>
+    <div class="bd">
+      <img width="32" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fvcdkbo352g303k03kq2r.gif" alt="">
+    </div>
+    <footer class="ft">Loading...</footer>
+  </div>
+  <script>
+    var btnShow = document.getElementById('btnShow');
+    var btnHide = document.getElementById('btnHide');
+    var el = document.getElementById('el');
+
+    btnShow.onclick = function () {
+      el.removeAttribute('hidden');
+      el.setAttribute('data-visible', true);
+    };
+
+
+    btnHide.onclick = function () {
+      el.setAttribute('data-visible', false);
+    };
+
+    el.addEventListener('webkitAnimationEnd', function () {
+      if (el.getAttribute('data-visible') === 'false') {
+        el.setAttribute('hidden', true);
+      }
+    });
+
+  </script>
+</body>
+
+</html>
