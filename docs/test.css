@@ -1,7 +1,8 @@
 /*webkit-sassui-loading Start*/
 .webkit-sassui-loading {
   text-align: center;
-  position: fixed;
+  user-select: none;
+  -webkit-user-select: none;
   left: 50%;
   top: 37.5%;
   transform: translate(-50%, -50%);
@@ -62,4 +63,8 @@ button {
 
 button:active {
   background: #0062cc;
+}
+
+.webkit-sassui-loading {
+  position: fixed;
 }

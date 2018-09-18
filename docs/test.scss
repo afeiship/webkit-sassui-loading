@@ -17,4 +17,9 @@ button{
   &:active{
     background:darken(#007aff, 10%);
   }
+
+}
+
+.webkit-sassui-loading{
+  position: fixed;
 }
