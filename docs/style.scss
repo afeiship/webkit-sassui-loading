@@ -1,9 +1,9 @@
-@import "../dist/webkit-sassui-loading.scss";
+@import "../dist/index.scss";
 
 .test-webkit-sassui-loading{
   border:1px solid red;
-
 }
+
 
 button{
   width: 100%;
@@ -22,4 +22,5 @@ button{
 
 .webkit-sassui-loading{
   position: fixed;
+  font-size: 14px;
 }

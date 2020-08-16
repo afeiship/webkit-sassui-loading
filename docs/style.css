@@ -1,8 +1,16 @@
+/*!
+ * name: @feizheng/webkit-sassui-loading
+ * description: Loading component for webkit sass.
+ * homepage: https://github.com/afeiship/webkit-sassui-loading
+ * version: 1.0.0
+ * date: 2020-08-16T09:57:22.123Z
+ * license: MIT
+ */
 /*webkit-sassui-loading Start*/
 .webkit-sassui-loading {
+  /* prettier-ignore */
   text-align: center;
   user-select: none;
-  -webkit-user-select: none;
   left: 50%;
   top: 37.5%;
   transform: translate(-50%, -50%);
@@ -27,7 +35,7 @@
   }
   to {
     opacity: 0;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
   }
 }
 
@@ -37,7 +45,7 @@
 }
 
 .webkit-sassui-loading.visible-true, .webkit-sassui-loading[data-visible="true"] {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   animation: webkit-sassui-loading-fade-in 300ms ease-in forwards;
 }
 
@@ -67,4 +75,5 @@ button:active {
 
 .webkit-sassui-loading {
   position: fixed;
+  font-size: 14px;
 }

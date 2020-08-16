@@ -1,32 +1,26 @@
+/*!
+ * name: @feizheng/webkit-sassui-loading
+ * description: Loading component for webkit sass.
+ * homepage: https://github.com/afeiship/webkit-sassui-loading
+ * version: 1.0.0
+ * date: 2020-08-16T09:57:22.123Z
+ * license: MIT
+ */
+
 /*webkit-sassui-loading Start*/
 $webkit-sassui-loading-options: (
   padding: 16px,
   border-radius: 10px,
   opacity: 0.6,
-  duration: 300ms
+  duration: 300ms,
 ) !default;
 
 .webkit-sassui-loading {
-  //Your code goes here.
-  $padding: map-get(
-    $map: $webkit-sassui-loading-options,
-    $key: padding
-  );
-
-  $opacity: map-get(
-    $map: $webkit-sassui-loading-options,
-    $key: opacity
-  );
-
-  $duration: map-get(
-    $map: $webkit-sassui-loading-options,
-    $key: duration
-  );
-
-  $border-radius: map-get(
-    $map: $webkit-sassui-loading-options,
-    $key: border-radius
-  );
+  /* prettier-ignore */
+  $padding: map-get( $map: $webkit-sassui-loading-options, $key: padding, );
+  $opacity: map-get( $map: $webkit-sassui-loading-options, $key: opacity, );
+  $duration: map-get( $map: $webkit-sassui-loading-options, $key: duration, );
+  $border-radius: map-get( $map: $webkit-sassui-loading-options, $key: border-radius, );
 
   @keyframes webkit-sassui-loading-fade-in {
     to {
@@ -34,6 +28,7 @@ $webkit-sassui-loading-options: (
       background: rgba(#000, $opacity);
     }
   }
+
   @keyframes webkit-sassui-loading-fade-out {
     from {
       opacity: 1;
@@ -47,7 +42,6 @@ $webkit-sassui-loading-options: (
 
   text-align: center;
   user-select: none;
-  -webkit-user-select: none;
   left: 50%;
   top: 37.5%;
   transform: translate(-50%, -50%);
