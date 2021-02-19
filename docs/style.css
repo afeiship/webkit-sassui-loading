@@ -1,13 +1,13 @@
 /*!
- * name: @feizheng/webkit-sassui-loading
+ * name: @jswork/wsui-loading
  * description: Loading component for webkit sass.
- * homepage: https://github.com/afeiship/webkit-sassui-loading
+ * homepage: https://github.com/afeiship/wsui-loading
  * version: 1.0.0
- * date: 2020-08-16T09:57:22.123Z
+ * date: 2021-02-19 13:15:26
  * license: MIT
  */
-/*webkit-sassui-loading Start*/
-.webkit-sassui-loading {
+/*wsui-loading Start*/
+.wsui-loading {
   /* prettier-ignore */
   text-align: center;
   user-select: none;
@@ -21,14 +21,14 @@
   color: #fff;
 }
 
-@keyframes webkit-sassui-loading-fade-in {
+@keyframes wsui-loading-fade-in {
   to {
     opacity: 1;
     background: rgba(0, 0, 0, 0.6);
   }
 }
 
-@keyframes webkit-sassui-loading-fade-out {
+@keyframes wsui-loading-fade-out {
   from {
     opacity: 1;
     background: rgba(0, 0, 0, 0.6);
@@ -39,22 +39,22 @@
   }
 }
 
-.webkit-sassui-loading > .ft {
+.wsui-loading > .ft {
   margin-top: 5px;
   display: block;
 }
 
-.webkit-sassui-loading.visible-true, .webkit-sassui-loading[data-visible="true"] {
+.wsui-loading.visible-true, .wsui-loading[data-visible="true"] {
   background: rgba(0, 0, 0, 0);
-  animation: webkit-sassui-loading-fade-in 300ms ease-in forwards;
+  animation: wsui-loading-fade-in 300ms ease-in forwards;
 }
 
-.webkit-sassui-loading, .webkit-sassui-loading.visible-false, .webkit-sassui-loading[data-visible="false"] {
-  animation: webkit-sassui-loading-fade-out 300ms ease-in forwards;
+.wsui-loading, .wsui-loading.visible-false, .wsui-loading[data-visible="false"] {
+  animation: wsui-loading-fade-out 300ms ease-in forwards;
 }
 
-/*webkit-sassui-loading End*/
-.test-webkit-sassui-loading {
+/*wsui-loading End*/
+.test-wsui-loading {
   border: 1px solid red;
 }
 
@@ -73,7 +73,7 @@ button:active {
   background: #0062cc;
 }
 
-.webkit-sassui-loading {
+.wsui-loading {
   position: fixed;
   font-size: 14px;
 }

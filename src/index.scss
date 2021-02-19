@@ -1,26 +1,26 @@
-/*webkit-sassui-loading Start*/
-$webkit-sassui-loading-options: (
+/*wsui-loading Start*/
+$wsui-loading-options: (
   padding: 16px,
   border-radius: 10px,
   opacity: 0.6,
   duration: 300ms,
 ) !default;
 
-.webkit-sassui-loading {
+.wsui-loading {
   /* prettier-ignore */
-  $padding: map-get( $map: $webkit-sassui-loading-options, $key: padding, );
-  $opacity: map-get( $map: $webkit-sassui-loading-options, $key: opacity, );
-  $duration: map-get( $map: $webkit-sassui-loading-options, $key: duration, );
-  $border-radius: map-get( $map: $webkit-sassui-loading-options, $key: border-radius, );
+  $padding: map-get( $map: $wsui-loading-options, $key: padding, );
+  $opacity: map-get( $map: $wsui-loading-options, $key: opacity, );
+  $duration: map-get( $map: $wsui-loading-options, $key: duration, );
+  $border-radius: map-get( $map: $wsui-loading-options, $key: border-radius, );
 
-  @keyframes webkit-sassui-loading-fade-in {
+  @keyframes wsui-loading-fade-in {
     to {
       opacity: 1;
       background: rgba(#000, $opacity);
     }
   }
 
-  @keyframes webkit-sassui-loading-fade-out {
+  @keyframes wsui-loading-fade-out {
     from {
       opacity: 1;
       background: rgba(#000, $opacity);
@@ -50,13 +50,13 @@ $webkit-sassui-loading-options: (
   &.visible-true,
   &[data-visible="true"] {
     background: rgba(#000, 0);
-    animation: webkit-sassui-loading-fade-in $duration ease-in forwards;
+    animation: wsui-loading-fade-in $duration ease-in forwards;
   }
 
   &,
   &.visible-false,
   &[data-visible="false"] {
-    animation: webkit-sassui-loading-fade-out $duration ease-in forwards;
+    animation: wsui-loading-fade-out $duration ease-in forwards;
   }
 }
-/*webkit-sassui-loading End*/
+/*wsui-loading End*/
